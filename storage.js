@@ -3,7 +3,8 @@ globalThis.PhoenixStorage=(()=>{
   const browserDatabase=location.protocol==='https:'||location.protocol==='http:'&&!local;
   const mode=local?'sqlite':browserDatabase?'indexeddb':'portable';
   let revision=0,token='',queue=Promise.resolve(),failed=false,pending=0,needsMigration=false,databasePromise;
-  const status=document.createElement('div');status.id='save-status';status.className='save-status';status.setAttribute('role','status');status.setAttribute('aria-live','off');
+  const status=document.createElement('div');status.id='save-status';status.className='save-status';status.hidden=true;status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+  const showError=message=>{status.textContent=message;status.classList.add('error');status.hidden=false;};
   function openDatabase(){
     if(!databasePromise)databasePromise=new Promise((resolve,reject)=>{
       if(!indexedDB)return reject(Error('Este navegador no permite almacenamiento local.'));
@@ -19,17 +20,15 @@ globalThis.PhoenixStorage=(()=>{
   const footer=document.querySelector('footer');footer.insertBefore(status,footer.querySelector('span'));
   async function load(){
     if(browserDatabase){
-      status.textContent='Leyendo archivo local de este dispositivo…';
       try{if(navigator.storage?.persist)await navigator.storage.persist();}catch{}
-      const stored=await readDeviceState();if(stored){status.textContent='Guardado en este dispositivo';return stored;}
+      const stored=await readDeviceState();if(stored)return stored;
       const legacy=JSON.parse(localStorage.getItem('phoenix-guide-v1')||'null');
       if(legacy)needsMigration=true;
-      status.textContent='Guardado en este dispositivo';return legacy;
+      return legacy;
     }
-    if(!local){status.textContent='Guardado en este navegador';return JSON.parse(localStorage.getItem('phoenix-guide-v1')||'null');}
+    if(!local)return JSON.parse(localStorage.getItem('phoenix-guide-v1')||'null');
     const response=await fetch('/api/state');if(!response.ok)throw Error('No se puede leer la base local.');
     const data=await response.json();revision=data.revision;token=data.token;
-    status.textContent='Datos locales · SQLite';
     if(data.state)return data.state;
     needsMigration=true;
     const legacy=JSON.parse(localStorage.getItem('phoenix-guide-v1')||'null');
@@ -38,17 +37,17 @@ globalThis.PhoenixStorage=(()=>{
   function save(state){
     if(failed)return false;
     if(browserDatabase){
-      const snapshot=JSON.parse(JSON.stringify(state));pending++;status.textContent='Guardando en este dispositivo…';
-      queue=queue.then(()=>writeDeviceState(snapshot)).catch(error=>{failed=true;status.textContent='No se pudo guardar: '+error.message+' Exporta una copia desde Datos y copias.';status.classList.add('error');}).finally(()=>{pending--;if(!failed&&pending===0)status.textContent='Guardado en este dispositivo';});
+      const snapshot=JSON.parse(JSON.stringify(state));pending++;
+      queue=queue.then(()=>writeDeviceState(snapshot)).catch(error=>{failed=true;showError('No se pudo guardar: '+error.message+' Exporta una copia desde Datos y copias.');}).finally(()=>{pending--;});
       return true;
     }
-    if(!local){try{localStorage.setItem('phoenix-guide-v1',JSON.stringify(state));status.textContent='Guardado en este navegador';return true;}catch{status.textContent='No se pudo guardar en este navegador. Exporta una copia.';status.classList.add('error');return false;}}
-    const snapshot=JSON.stringify(state);pending++;status.textContent='Guardando en SQLite…';
+    if(!local){try{localStorage.setItem('phoenix-guide-v1',JSON.stringify(state));return true;}catch{showError('No se pudo guardar en este navegador. Exporta una copia.');return false;}}
+    const snapshot=JSON.stringify(state);pending++;
     queue=queue.then(async()=>{
       if(failed)return;
       const response=await fetch('/api/state',{method:'PUT',headers:{'Content-Type':'application/json','X-Phoenix-Token':token},body:JSON.stringify({revision,state:JSON.parse(snapshot)})});
       const data=await response.json();if(!response.ok)throw Error(data.error||'No se pudo guardar.');revision=data.revision;
-    }).catch(error=>{failed=true;status.textContent='Sin guardar: '+error.message+' Exporta una copia desde Datos y copias.';status.classList.add('error');}).finally(()=>{pending--;if(!failed&&pending===0)status.textContent='Guardado en SQLite';});
+    }).catch(error=>{failed=true;showError('Sin guardar: '+error.message+' Exporta una copia desde Datos y copias.');}).finally(()=>{pending--;});
     return true;
   }
   window.addEventListener('beforeunload',event=>{if(pending||failed){event.preventDefault();event.returnValue='';}});

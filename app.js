@@ -122,7 +122,11 @@
     createBuild.hidden=section!=='Builds';
     communityBuilds.hidden=section!=='Builds';
     if(Collection.migrate(progress,catalog.entries))save();
+    const isHome=section==='Inicio'&&!query;
     scenarioOptions();activityFilterLabel.hidden=section!=='Silos/Monolitos';
+    document.querySelector('.filters').hidden=isHome;
+    $('stats').hidden=!isHome;
+    $('home-links').hidden=!isHome;
     const menuScroll=$('navigation').querySelector('.nav-catalog')?.scrollTop||0;
     $('navigation').replaceChildren();
     const personal=node('div',undefined,'nav-personal'),catalogMenu=node('div',undefined,'nav-catalog');
@@ -139,17 +143,18 @@
     imageNote.textContent='Imágenes en línea: '+pictures.filter(p=>p.remote).length+' / '+catalog.entries.length+' fichas. La app y tus datos siguen en este equipo; las imágenes se cargan directamente desde la wiki o los medios oficiales y requieren Internet. Si la fuente bloquea una imagen, puedes abrir su procedencia. No hace falta descargarlas previamente.';
     $('breadcrumb').textContent=query?'Búsqueda global':Core.categoryLabel(section);
     $('stats').replaceChildren();
-    for(const [num,label,target] of [[catalog.entries.length,'EXPLORAR CATÁLOGO','Inicio'],[catalog.entries.filter(e=>progress.favorites[e.id]).length,'FAVORITOS','Favoritos'],[Collection.count(catalog.entries,progress),'MI COLECCIÓN','Checklist']]){const item=button('',()=>{section=target;query='';$('search').value='';$('scenario').value='';collectionFilter.value='';render();},'stat');item.setAttribute('aria-label','Abrir '+Core.categoryLabel(target));item.append(node('b',String(num).padStart(2,'0')),node('span',label),node('span','↗','stat-arrow'));$('stats').append(item);}
-    let entries=query?Core.search(catalog.entries,query):catalog.entries.filter(e=>section==='Inicio'||section==='Favoritos'&&progress.favorites[e.id]||section==='Checklist'&&Collection.eligible(e)&&!Collection.isSet(e)&&Collection.state(e,progress,catalog.entries).checked||e.category===section);
+    for(const [num,label,target] of [[catalog.entries.length,'FICHAS EN LA GUÍA',''],[catalog.entries.filter(e=>progress.favorites[e.id]).length,'FAVORITOS','Favoritos'],[Collection.count(catalog.entries,progress),'MI COLECCIÓN','Checklist']]){const item=target?button('',()=>{section=target;query='';$('search').value='';$('scenario').value='';collectionFilter.value='';render();},'stat'):node('div',undefined,'stat');if(target)item.setAttribute('aria-label','Abrir '+Core.categoryLabel(target));item.append(node('b',String(num).padStart(2,'0')),node('span',label));if(target)item.append(node('span','↗','stat-arrow'));$('stats').append(item);}
+    const recent=[...catalog.entries].sort((a,b)=>String(b.updatedAt||b.wiki?.fetchedAt||'').localeCompare(String(a.updatedAt||a.wiki?.fetchedAt||''))).slice(0,6);
+    let entries=query?Core.search(catalog.entries,query):isHome?recent:catalog.entries.filter(e=>section==='Favoritos'&&progress.favorites[e.id]||section==='Checklist'&&Collection.eligible(e)&&!Collection.isSet(e)&&Collection.state(e,progress,catalog.entries).checked||e.category===section);
     if($('scenario').value){const scenario=catalog.entries.find(e=>e.id===$('scenario').value);entries=entries.filter(e=>e.world?PhoenixWorld.matches(e,scenario.id):Core.search([e],scenario.originalName||scenario.name).length);}
     if(section==='Silos/Monolitos'&&activityFilter.value)entries=entries.filter(e=>e.world?.type===activityFilter.value);
     worldInfo.hidden=!['Silos/Monolitos','Escenarios'].includes(section)||!!query;
     const selectedScenario=catalog.entries.find(e=>e.id===$('scenario').value);
     worldInfo.textContent=selectedScenario?.world?.coverage||'Consulta de la wiki: 23/10/2026. Las fichas distinguen silos, monolitos y otras actividades. Las lagunas o discrepancias de las fuentes se indican en cada ficha; las variantes con el mismo código no se mezclan.';
     if(collectionFilter.value)entries=entries.filter(e=>Collection.eligible(e)&&(collectionFilter.value==='owned'?Collection.state(e,progress,catalog.entries).checked:!Collection.state(e,progress,catalog.entries).checked));
-    $('section-title').textContent=query?'Resultados en toda la guía':section==='Inicio'?'Explorar el archivo':Core.categoryLabel(section);
-    $('section-kicker').textContent=query?'BUSCADOR GLOBAL':section==='Checklist'?'PLANOS, MODS Y DESVIACIONES QUE YA TIENES':'TU ARCHIVO DE NALCOTT';
-    $('result-count').textContent=entries.length+' fichas';$('cards').replaceChildren();
+    $('section-title').textContent=query?'Resultados en toda la guía':isHome?'Lo último en la guía':Core.categoryLabel(section);
+    $('section-kicker').textContent=query?'BUSCADOR GLOBAL':isHome?'ACTUALIZACIONES RECIENTES':section==='Checklist'?'PLANOS, MODS Y DESVIACIONES QUE YA TIENES':'TU ARCHIVO DE NALCOTT';
+    $('result-count').textContent=isHome?entries.length+' novedades':entries.length+' fichas';$('cards').replaceChildren();
     if(!entries.length)$('cards').append(node('div',section==='Checklist'?'Tu colección está vacía para estos filtros. Marca los checks junto a los favoritos para añadir lo que ya tienes.':query?'No hay coincidencias. Prueba con «Burn», «PHI» o «Pyro Dino».':section==='Builds'?'Aún no tienes builds. Pulsa «Crear build» para preparar tu equipo.':section==='Favoritos'?'Aún no tienes favoritos. Usa la estrella de cualquier ficha.':'No hay fichas para este filtro.','empty'));
     for(const raw of entries){
       const e=PhoenixNames.present(raw,catalog.entries);
@@ -168,6 +173,14 @@
       card.addEventListener('click',event=>{if(event.target.closest('button,a,input,label,select,textarea'))return;if(window.getSelection()?.toString())return;openDetail(e.id);});
       card.addEventListener('keydown',event=>{if(event.target===card&&(event.key==='Enter'||event.key===' ')){event.preventDefault();openDetail(e.id);}});
       $('cards').append(card);
+    }
+    if(isHome){
+      const links=$('home-links-grid');links.replaceChildren();
+      for(const category of Core.categories){
+        const count=catalog.entries.filter(e=>e.category===category).length;
+        const link=button('',()=>{section=category;query='';$('search').value='';$('scenario').value='';collectionFilter.value='';render();},'home-link');
+        link.append(node('strong',Core.categoryLabel(category)),node('span',count+' fichas'),node('span','↗','home-link-arrow'));links.append(link);
+      }
     }
   }
   function checkRow(text,checked,fn){const label=node('label',undefined,'check-row'),input=node('input');input.type='checkbox';input.checked=checked;input.addEventListener('change',fn);label.append(input,node('span',text));return label;}
@@ -191,7 +204,7 @@
     if(Collection.isSet(e)){box.append(node('h3','Planos de las piezas'));for(const part of Collection.parts(e,catalog.entries)){const localized=PhoenixNames.present(part,catalog.entries),control=collectionCheck(localized,localized.name,refreshCollection);collectionControls.push(control);box.append(control);}}
     else if(e.equipment){box.append(node('h3','Equipo por reunir'));e.equipment.forEach((part,i)=>{const key=id+':'+i;box.append(checkRow(part,!!progress.equipment[key],()=>{progress.equipment[key]=!progress.equipment[key];save();}));});}
     const label=node('label','Notas personales');label.htmlFor='entry-notes';box.append(node('h3'));box.lastChild.append(label);
-    const notes=node('textarea');notes.id='entry-notes';notes.maxLength=20000;notes.placeholder='Tu ruta, pruebas de daño, materiales pendientes…';notes.value=progress.notes[id]||'';notes.addEventListener('input',()=>{progress.notes[id]=notes.value;const ok=save();noteStatus.textContent=ok?'El indicador inferior confirma el guardado':'Sin guardar: comprueba el indicador inferior';});const noteStatus=node('div',storageAvailable?'El indicador inferior confirma el guardado':'Comprueba el indicador inferior','muted');box.append(notes,noteStatus);
+    const notes=node('textarea');notes.id='entry-notes';notes.maxLength=20000;notes.placeholder='Tu ruta, pruebas de daño, materiales pendientes…';notes.value=progress.notes[id]||'';notes.addEventListener('input',()=>{progress.notes[id]=notes.value;const ok=save();noteStatus.textContent=ok?'Cambios guardados en este dispositivo.':'No se han podido guardar los cambios.';});const noteStatus=node('div',storageAvailable?'Tus notas se guardan en este dispositivo.':'No se han podido guardar los cambios.','muted');box.append(notes,noteStatus);
     box.append(node('h3','Fichas relacionadas'));const related=node('div',undefined,'related');for(const link of e.related){const target=catalog.entries.find(x=>x.id===link);related.append(button(PhoenixNames.name(target),()=>openDetail(link),'secondary'));}box.append(related);
     box.append(node('h3','Fuentes y procedencia'));
     if(!e.sources.length)box.append(node('p',e.personalBuild?'Build creada localmente por ti. Consulta las fuentes de cada pieza en sus fichas relacionadas.':'Ficha personal basada en nuestra conversación; sin fuente externa suficiente.'));
