@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" fill="none">
   <rect width="192" height="192" rx="38" fill="#0c1013"/>
-  <path d="M96 24 146 52v58l-50 58-50-58V52z" fill="#151d22" stroke="#f1a464" stroke-width="5"/>
-  <path d="M96 45 124 61v34l-28 31-28-31V61z" fill="none" stroke="#f1a464" stroke-width="6"/>
-  <path d="M96 62v50M79 73l17 12 17-12M79 101l17-12 17 12" fill="none" stroke="#e4e8e9" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <circle cx="96" cy="96" r="69" fill="#11171b" stroke="#f1a464" stroke-width="6"/>
+  <circle cx="96" cy="96" r="57" stroke="#f1a464" stroke-opacity=".25" stroke-width="2"/>
+  <path d="m96 36 8 11H88l8-11Zm0 120-8-11h16l-8 11Z" fill="#f1a464"/>
+  <path d="M96 50c-5 13-14 21-22 27-6 5-10 12-10 20-8-5-13-11-17-19-1 22 8 37 26 46-6 4-11 10-14 17 15-.5 27-7 37-17 10 10 22 16.5 37 17-3-7-8-13-14-17 18-9 27-24 26-46-4 8-9 14-17 19 0-8-4-15-10-20-8-6-17-14-22-27Z" fill="#f1a464"/>
+  <path d="M96 91c-7 9-12 16-12 24 0 9 5 15 12 19 7-4 12-10 12-19 0-8-5-15-12-24Z" fill="#11171b"/>
+  <path d="M96 105c-4 5-6 9-6 13 0 5 2 8 6 11 4-3 6-6 6-11 0-4-2-8-6-13Z" fill="#ffd29c"/>
 </svg>
