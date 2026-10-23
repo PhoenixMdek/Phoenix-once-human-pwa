@@ -96,7 +96,6 @@ nav button{padding:8px 10px;min-height:40px}
  .nav-personal button{min-height:44px;font-size:12px}
  .topbar{padding:0 14px;gap:8px;font-size:9px;letter-spacing:1px}
  #install-app{padding:6px 9px;font-size:10px;white-space:nowrap}
- #save-status{left:50%!important;right:auto!important;bottom:calc(73px + env(safe-area-inset-bottom))!important;transform:translateX(-50%);max-width:calc(100vw - 20px)!important;font-size:11px}
  #toast{bottom:calc(78px + env(safe-area-inset-bottom));padding:10px 14px}
  .pwa-update{bottom:calc(75px + env(safe-area-inset-bottom));font-size:11px}
  .card-foot button,.collection-toggle{min-height:36px;display:inline-flex;align-items:center}
