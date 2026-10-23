@@ -2928,17 +2928,6 @@ globalThis.PHOENIX_MEDIA = {
       "fileTimestamp": "2025-09-22T14:19:15Z",
       "credit": "",
       "license": "No indicada en la ficha de archivo; consultar la fuente"
-    },
-    "mods": {
-      "caption": "Mod de Quemadura de referencia",
-      "fileTitle": "File:Mod - Embers (Legendary).png",
-      "filePage": "https://once-human.fandom.com/wiki/File:Mod_-_Embers_(Legendary).png",
-      "sourceURL": "https://static.wikia.nocookie.net/once-human/images/3/30/Mod_-_Embers_%28Legendary%29.png/revision/latest?cb=20250922140309",
-      "pageURL": "https://once-human.fandom.com/wiki/Embers",
-      "downloadedAt": "2026-10-22T13:55:32.053Z",
-      "fileTimestamp": "2025-09-22T14:03:09Z",
-      "credit": "",
-      "license": "No indicada en la ficha de archivo; consultar la fuente"
     }
   },
   "verificationRequired": false,

@@ -31,8 +31,7 @@ globalThis.PHOENIX_SEED = {
       ],
       "related": [
         "pyro",
-        "bbq",
-        "mods"
+        "bbq"
       ],
       "sources": [
         {
@@ -741,54 +740,6 @@ globalThis.PHOENIX_SEED = {
       }
     },
     {
-      "id": "mods",
-      "category": "Mods/Calibraciones",
-      "name": "Mods para Quemadura",
-      "subtitle": "Sobrecarga Elemental · Mejora de Estado",
-      "tags": [
-        "Mod",
-        "Burn",
-        "Daño elemental",
-        "Estado",
-        "Calibración"
-      ],
-      "summary": "Consulta los mods de Quemadura en castellano, con su efecto, ranura y fecha de revisión. Contrasta las fichas antiguas con el cliente actual.",
-      "details": [
-        "Sobrecarga Elemental: Calzado (revisión 2024-09-23). Mejora de Estado: Guantes (revisión 2024-09-23). Comprueba las ranuras y efectos en tu cliente antes de equiparlos.",
-        "Las fichas relacionadas muestran los efectos de otros mods vinculados a Quemadura. No se presenta una combinación como óptima sin una prueba en el parche actual.",
-        "Calibraciones: aún no se ha incorporado un catálogo ni una recomendación concreta. Puedes registrar tus pruebas en las notas de la build."
-      ],
-      "related": [
-        "bbq",
-        "kvd",
-        "wiki-mod-1682",
-        "wiki-mod-1683",
-        "wiki-mod-1619",
-        "wiki-mod-1620",
-        "wiki-mod-1655"
-      ],
-      "sources": [
-        {
-          "label": "Once Human Wiki · Elemental Overload",
-          "url": "https://once-human.fandom.com/wiki/Elemental_Overload"
-        },
-        {
-          "label": "Revisión 6050 · 2024-09-23",
-          "url": "https://once-human.fandom.com/wiki/Special:Redirect/revision/6050"
-        },
-        {
-          "label": "Once Human Wiki · Status Enhancement",
-          "url": "https://once-human.fandom.com/wiki/Status_Enhancement"
-        },
-        {
-          "label": "Revisión 6051 · 2024-09-23",
-          "url": "https://once-human.fandom.com/wiki/Special:Redirect/revision/6051"
-        }
-      ],
-      "status": "Orientación · Verificar ranuras",
-      "updatedAt": "2026-10-22"
-    },
-    {
       "category": "Armaduras",
       "sources": [
         {
@@ -1022,9 +973,7 @@ globalThis.PHOENIX_SEED = {
         "Efecto: La frecuencia de Quemadura aumenta con sus acumulaciones, hasta un 100%.",
         "Rangos de la tabla general de la wiki: varían por nivel, mejora y escenario. No son atributos garantizados de tu personaje. No se importan recetas ni tablas de fabricación. Verifica las restricciones de Deviation en la fuente."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "wiki": {
         "pageId": 1907,
         "revisionId": 16485,
@@ -18638,9 +18587,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-21. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Abnormal Increase",
@@ -18700,9 +18647,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Blaze Blessing",
@@ -18762,9 +18707,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Blitzkrieg",
@@ -18824,9 +18767,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Bombardier Souvenir",
@@ -18886,9 +18827,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Bounce Rampage",
@@ -18947,9 +18886,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-21. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Bullet Siphon",
@@ -19009,9 +18946,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Burning Wrath",
@@ -19070,9 +19005,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Covered Advance",
@@ -19131,9 +19064,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-02-01. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Crit Amplifier",
@@ -19192,9 +19123,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-02-01. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Crit Boost",
@@ -19254,9 +19183,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-26. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Crit DMG Enhancement",
@@ -19315,9 +19242,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Critical Rescue",
@@ -19377,9 +19302,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Cryo Blast",
@@ -19438,9 +19361,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Deadshot",
@@ -19499,9 +19420,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Delayed Blast",
@@ -19560,9 +19479,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-11-02. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Deviation Expert Mod",
@@ -19622,9 +19539,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Durable Territory",
@@ -19683,9 +19598,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Elemental Havoc",
@@ -19745,7 +19658,6 @@ globalThis.PHOENIX_SEED = {
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
       "related": [
-        "mods",
         "bbq"
       ],
       "sources": [
@@ -19807,9 +19719,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Embers",
@@ -19868,9 +19778,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Enduring Shield",
@@ -19930,9 +19838,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Explosive Shrapnel",
@@ -19991,9 +19897,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Fateful Strike",
@@ -20052,9 +19956,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Ferocious Charge",
@@ -20114,9 +20016,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Final Territory",
@@ -20176,9 +20076,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · First Electrocution",
@@ -20237,9 +20135,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · First-Move Advantage",
@@ -20299,9 +20195,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Flame Resonance",
@@ -20361,9 +20255,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Frosty Blessing",
@@ -20423,9 +20315,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Gunslinger",
@@ -20484,9 +20374,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Head Guard",
@@ -20545,9 +20433,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Head-On Conflict",
@@ -20606,9 +20492,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Healing Fortification",
@@ -20668,9 +20552,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Heavy Explosives",
@@ -20729,9 +20611,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Hunter's Perk",
@@ -20790,9 +20670,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Lifeforce Boost",
@@ -20852,9 +20730,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Light Cannon",
@@ -20914,9 +20790,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Lingering Frost",
@@ -20975,9 +20849,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Mag Expansion",
@@ -21036,9 +20908,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Melee Amplifier",
@@ -21097,9 +20967,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Melee Momentum",
@@ -21158,9 +21026,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Momentum Up",
@@ -21220,9 +21086,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Multi-Bounce",
@@ -21281,9 +21145,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Munitions Amplifier",
@@ -21343,9 +21205,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Not Throw Away Your Shot",
@@ -21405,9 +21265,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Obliteration",
@@ -21467,9 +21325,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Point Detonation",
@@ -21529,9 +21385,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Portable Territory",
@@ -21590,9 +21444,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Precise Strike",
@@ -21652,9 +21504,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Precision Bounce",
@@ -21713,9 +21563,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Precision Charge",
@@ -21775,9 +21623,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Precision Rush",
@@ -21836,9 +21682,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Quick Comeback",
@@ -21898,9 +21742,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Reckless Bomber",
@@ -21960,9 +21802,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Recover Mark",
@@ -22021,9 +21861,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Rejuvenating",
@@ -22082,9 +21920,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Reload Rampage",
@@ -22143,9 +21979,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Resist Advantage",
@@ -22205,9 +22039,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Retrusion Explosion",
@@ -22266,9 +22098,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Rush Hour",
@@ -22327,9 +22157,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Ruthless Reaper",
@@ -22388,9 +22216,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Secluded Strike",
@@ -22450,9 +22276,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shatter Them All",
@@ -22512,9 +22336,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shattering Ice",
@@ -22574,9 +22396,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shield Breaker",
@@ -22636,9 +22456,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shock Rampage",
@@ -22698,9 +22516,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shoot Out",
@@ -22760,9 +22576,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shrapnel Carnage",
@@ -22822,9 +22636,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Shrapnel Souvenir",
@@ -22883,9 +22695,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Slow and Steady",
@@ -22945,9 +22755,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Spreading Marks",
@@ -23007,9 +22815,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Static Shock",
@@ -23068,9 +22874,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Status Amplification",
@@ -23130,7 +22934,6 @@ globalThis.PHOENIX_SEED = {
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
       "related": [
-        "mods",
         "bbq"
       ],
       "sources": [
@@ -23191,9 +22994,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Status Immune",
@@ -23253,9 +23054,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Super Bullet",
@@ -23315,9 +23114,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Super Charged",
@@ -23377,9 +23174,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Surge Amplifier",
@@ -23439,9 +23234,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Targeted Bounce",
@@ -23501,9 +23294,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Targeted Strike",
@@ -23562,9 +23353,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-10-04. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Three Strikes",
@@ -23624,9 +23413,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Thunderclap",
@@ -23686,9 +23473,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Unbreakable",
@@ -23748,9 +23533,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · United We Stand",
@@ -23809,9 +23592,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Unstoppable",
@@ -23871,9 +23652,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-10-06. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Vortex Multiplier",
@@ -23932,9 +23711,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2025-09-22. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Vulnerability Amplifier",
@@ -23993,9 +23770,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Weakspot DMG Boost",
@@ -24054,9 +23829,7 @@ globalThis.PHOENIX_SEED = {
         "Revisión de la fuente: 2024-09-23. Esta revisión tiene más de un año; comprueba el efecto y la ranura en tu cliente actual.",
         "La descarga no certifica compatibilidad con el parche o escenario. No se importan rutas de obtención, sufijos ni calibraciones."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Once Human Wiki · Work Of Proficiency",
@@ -46441,9 +46214,7 @@ globalThis.PHOENIX_SEED = {
         "Rebote (Bounce): Daño de Rebote.",
         "Metralla (Shrapnel): Relacionado con Metralla."
       ],
-      "related": [
-        "mods"
-      ],
+      "related": [],
       "sources": [
         {
           "label": "Wiki · sufijos",

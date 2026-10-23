@@ -176,11 +176,6 @@
     // Solo actualiza identificadores recibidos. Las fichas ausentes nunca se borran automáticamente.
     const map=new Map(catalog.entries.map(e=>[e.id,e]));
     for(const entry of result.entries){const old=map.get(entry.id);map.set(entry.id,{...entry,related:[...new Set([...(old?.related||[]),...entry.related])]});}
-    if(result.entries.some(e=>e.wiki?.kind==='mod')&&map.has('mods')){
-      const hub=map.get('mods');
-      const describe=(id,label)=>{const e=map.get(id);return label+': '+(e?.details.find(t=>t.startsWith('Ranura: '))?.slice(8)||'ranura por revisar')+(e?.wiki?.revisedAt?' (revisión '+e.wiki.revisedAt.slice(0,10)+')':'');};
-      map.set('mods',{...hub,subtitle:'Sobrecarga Elemental · Mejora de Estado',summary:'Consulta los mods de Quemadura en castellano, con su efecto, ranura y fecha de revisión. Contrasta las fichas antiguas con el cliente actual.',details:[describe('wiki-mod-1682','Sobrecarga Elemental')+'. '+describe('wiki-mod-1683','Mejora de Estado')+'. Comprueba las ranuras y efectos en tu cliente antes de equiparlos.','Las fichas relacionadas muestran los efectos de otros mods vinculados a Quemadura. No se presenta una combinación como óptima sin una prueba en el parche actual.','Calibraciones: aún no se ha incorporado un catálogo ni una recomendación concreta. Puedes registrar tus pruebas en las notas de la build.'],related:[...new Set([...hub.related,'wiki-mod-1682','wiki-mod-1683','wiki-mod-1619','wiki-mod-1620','wiki-mod-1655'])],sources:[...(map.get('wiki-mod-1682')?.sources||[]).slice(0,2),...(map.get('wiki-mod-1683')?.sources||[]).slice(0,2)],status:'Orientación · Verificar ranuras',updatedAt:result.fetchedAt.slice(0,10)});
-    }
     const ids=new Set(map.keys());
     const entries=[...map.values()].map(e=>({...e,related:e.related.filter(id=>ids.has(id))}));
     return {...catalog,catalogVersion:'wiki-'+result.fetchedAt.replace(/[:.]/g,'-'),updatedAt:result.fetchedAt.slice(0,10),entries};
