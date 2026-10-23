@@ -1,5 +1,4 @@
-// Publicación 577380bfb81631876a34c23173cd39a745512970
-const VERSION='phoenix-shell-v0.12.1';
+const VERSION='phoenix-shell-2d4f564920afa753bc87722dbf515702a3d1d9b3';
 const ROOT=new URL('./',self.registration.scope);
 const APP_FILES=['index.html','style.css','manifest.webmanifest','icon-192.svg','icon-512.svg','phoenix-mark.svg','catalog.js','media.js','media-view.js','mods-es.js','deviations-es.js','names-es.js','mod-options.js','builds.js','core.js','collection.js','world.js','supply.js','wiki.js','catalog-cleanup.js','storage.js','app.js','pwa.js'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
