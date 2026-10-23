@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c1013"><meta name="description" content="Guía personal en castellano de Once Human, con builds, colección y favoritos guardados en el dispositivo.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://static.wikia.nocookie.net/once-human/images/ https://r.res.easebar.com/pic/; connect-src 'self' https://once-human.fandom.com; manifest-src 'self'; worker-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'">
+  <title>Phoenix · Once Human Guide</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#inicio"><span class="brand-icon">♜</span><span>PHOENIX<small>ONCE HUMAN GUIDE</small></span></a>
+  <div class="edition">TU ESPACIO PERSONAL</div>
+  <nav id="navigation" aria-label="Secciones de la guía"></nav>
+  <div class="sidebar-bottom"><span class="online-dot"></span> APP LOCAL<small>Datos en este dispositivo. Imágenes con Internet.</small><span class="version">PROTOTIPO / v0.12.0</span></div>
+</aside>
+<main>
+  <header class="topbar"><span>ARCHIVO / <b id="breadcrumb">Inicio</b></span><span class="top-status">SIN CUENTAS · SIN SUSCRIPCIONES</span><button id="install-app" class="secondary" hidden>Instalar en este móvil</button></header>
+  <section class="hero">
+  <div class="eyebrow">COMPANION EN CASTELLANO <span> // </span> PC · MÓVIL</div>
+    <h1>Tu archivo de <em>Nalcott.</em></h1>
+    <p>Armas, desviaciones y builds. Un archivo personal para explorar Nalcott a tu manera.</p>
+    <div class="hero-mark" aria-hidden="true">P<span>◈</span></div>
+    <div class="hero-footer"><span>BASE LOCAL <b id="catalog-version"></b></span><span>REVISIÓN EDITORIAL <b id="catalog-date"></b></span></div>
+  </section>
+  <section class="workspace">
+    <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar en toda la guía… KVD, Burn, Pyro Dino" aria-label="Buscar en toda la guía"><kbd> / </kbd></label><button id="data-button" class="secondary">↥ Datos y copias</button></div>
+    <div class="notice"><span>!</span><p><strong>Un punto de partida, con fuentes.</strong> Catálogo con fuentes y cobertura parcial. Las builds pendientes de validar se identifican en sus fichas.</p></div>
+    <div id="stats" class="stats"></div>
+    <div class="section-heading"><div><div class="eyebrow" id="section-kicker">TU PUNTO DE ENCUENTRO</div><h2 id="section-title">Explorar el archivo</h2></div><span id="result-count"></span></div>
+    <div class="filters"><label>Escenario <select id="scenario"><option value="">Todos los escenarios</option><option>Manibus</option><option>Way of Winter</option><option>Endless Dream</option><option>Deviation</option></select></label><span class="filter-help">El filtro busca menciones; no certifica compatibilidad.</span></div>
+    <div id="cards" class="cards"></div>
+  </section>
+  <footer>PHOENIX / Proyecto de aficionado independiente. Once Human pertenece a sus respectivos titulares.<span>100% LOCAL</span></footer>
+</main>
+<dialog id="detail"><div id="detail-content"></div></dialog>
+<dialog id="data-dialog"><div class="dialog-top"><span class="eyebrow">TU ARCHIVO LOCAL</span><button class="icon close-data" aria-label="Cerrar">×</button></div><h2>Datos y copias de seguridad</h2><p id="storage-description">Tus datos se guardan localmente en este dispositivo.</p><div class="data-actions"><button id="export-backup">↓ Exportar copia completa</button><label class="file-button secondary">↑ Restaurar copia<input id="restore-file" type="file" accept=".json,application/json"></label></div><hr><h3>Actualizar el catálogo</h3><p>Importa un catálogo completo en formato JSON v1. Sustituye las fichas locales y conserva tu progreso. Antes de aplicarlo verás la versión y los cambios.</p><div class="data-actions"><button id="export-catalog" class="secondary">↓ Exportar catálogo JSON</button><label class="file-button secondary">↑ Revisar actualización<input id="catalog-file" type="file" accept=".json,application/json"></label></div><div id="import-preview" hidden></div><p class="muted">No se descargan datos automáticamente. Los enlaces de las fuentes requieren Internet.</p></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="catalog.js"></script><script src="media.js"></script><script src="media-view.js"></script><script src="mods-es.js"></script><script src="deviations-es.js"></script><script src="names-es.js"></script><script src="mod-options.js"></script><script src="builds.js"></script><script src="core.js"></script><script src="collection.js"></script><script src="world.js"></script><script src="supply.js"></script><script src="wiki.js"></script><script src="catalog-cleanup.js"></script><script src="storage.js"></script><script src="app.js"></script><script src="pwa.js"></script>
+</body></html>
