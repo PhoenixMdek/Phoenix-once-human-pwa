@@ -1,4 +1,4 @@
-// Publicación ba1409627a4a1e8b128643bc8e0754b03e4de8c2
+// Publicación 6d86383385593ad1eed274b73ee21296e29cc78b
 const VERSION='phoenix-shell-v0.12.0';
 const ROOT=new URL('./',self.registration.scope);
 const APP_FILES=['index.html','style.css','manifest.webmanifest','icon-192.svg','icon-512.svg','phoenix-mark.svg','catalog.js','media.js','media-view.js','mods-es.js','deviations-es.js','names-es.js','mod-options.js','builds.js','core.js','collection.js','world.js','supply.js','wiki.js','catalog-cleanup.js','storage.js','app.js','pwa.js'];
